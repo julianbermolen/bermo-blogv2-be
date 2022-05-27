@@ -8,7 +8,7 @@ const mysql = require('mysql');
 }*/
 let conexion = {
     connectionLimit:3,
-    host: "julianbermolen.com",
+    host: "sql629.main-hosting.eu",
     user:"u130197610_julianbermolen",
     password:"Julian123!",
     database:"u130197610_julianbermolen"
