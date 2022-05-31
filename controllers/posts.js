@@ -4,7 +4,7 @@ const db = require('../database/conexion');
 
 userCtrl.getPosts = async (req, res) => {
     
-    let user = await db.query('SELECT * FROM posts',async (err,resp) => {
+    let user = await db.query('SELECT * FROM posts order by created_at DESC',async (err,resp) => {
         if(err){
             console.log({"status":"error","msg":"Error de base de datos","err":err})
         }else{
